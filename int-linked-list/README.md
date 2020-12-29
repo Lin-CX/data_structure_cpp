@@ -33,15 +33,15 @@ List用来存储信息如目前节点数(count), 第一个node和最后一个nod
 ### 函数说明
 这个程序有以下函数，接下来进行说明。简单的函数就用注释说明，稍微需要字数说明的放在下面。
 ```
-int compare(int a, int b);  // 比较a和b，因为是有序链表所以需要通过判断大小来判断是否要进入next node
-List *create_list();        // 创建list
+int compare(int a, int b);  		// 比较a和b，因为是有序链表所以需要通过判断大小来判断是否要进入next node
+List *create_list();        		// 创建list
 List *destroy_list(List *pList);    // 结束时释放内存
 int list_count(List *pList);        // 返回目前node数
 bool isEmpty(List *pList);          // 返回目前有无node
 void print_list(List *pList);       // 打印linked list
 
 int add_node(List *pList, int data);                                // 查找并判断node是否存在，存在则调用_insert
-int remove_node(List *pList, int Key, int *dataOut);                // 查找并判断node是否存在，存在则调用_insert
+int remove_node(List *pList, int Key, int *dataOut);                // 查找并判断node是否存在，存在则调用_delete
 int search_list(List *pList, int Key, int *dataOut);                // 搜索函数
 int _insert(List *pList, Node *pPre, int data);                     // 插入node
 void _delete(List *pList, Node *pPre, Node *pLoc, int *dataOut);    // 删除node
