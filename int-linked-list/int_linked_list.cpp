@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "mylib.h"
 using namespace std;
 
 #define QUIT	1
