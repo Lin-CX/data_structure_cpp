@@ -25,10 +25,18 @@ struct List {
 ```
 <div  align="center"><kbd>  
     <img src="./linked_list_structor.png" alt="structure" align=center />
-</kbd></div>  
+</kbd></div><br>  
 总共有两个结构体
 Node即为存放数据的节点。  
 List用来存储信息如目前节点数(count), 第一个node和最后一个node(head, rear)。
+
+### 运行结果  
+* 截图中有简单的插入，搜索，删除，退出操作。
+* 退出时会释放分配的内存，使用valgrind查看。截图红线处是分配和释放内存数。  
+
+<div  align="center"><kbd>  
+    <img src="./result.png" alt="result" align=center width="90%" />
+</kbd></div>  
 
 ### 函数说明
 这个程序有以下函数，接下来进行说明。简单的函数就用注释说明，稍微需要字数说明的放在下面。
