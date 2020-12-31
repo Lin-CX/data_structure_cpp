@@ -43,4 +43,4 @@ Tree* BST_destroy(Tree* pTree);         // 调用_destroy以释放整个tree的�
 void print_tree(Tree* pTree);           // 调用_infix_print以打印tree
 void _infix_print(Node* root, int level);   // 打印tree
 ```
-至于为什么总是在函数中调用另一个函数来实现一个功能，比如在BST_insert中调用add_BST来实现insert，因为希望实现功能时只用传入tree和相关数据而不用考虑格式问题(指针，双指针，引用等)，格式的问题在BST_insert中转换，真正实现在add_BST中。这样在mian中使用的时候就会方便很多。
+至于为什么总是在函数中调用另一个函数来实现一个功能，比如在BST_insert中调用add_BST来实现insert，因为希望实现功能时只用传入tree和相关数据而不用考虑格式问题(指针，双指针，引用等)，格式的问题在BST_insert中转换，真正实现在add_BST中。这样在main中使用的时候就会方便很多。
