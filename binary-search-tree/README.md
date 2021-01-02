@@ -1,6 +1,6 @@
 # C++实现Binary search tree
 
-### 数据结构:
+### Data Structure:
 ```
 struct Node {
 	int data;
@@ -21,14 +21,14 @@ struct Tree {
 总共有两个结构体:  
 Node即为存放数据的节点, Tree用来存放tree的root。
 
-### 运行结果
+### Result
 * 输入非int类型可以退出循环。如截图中红线标出的‘f’
 * 通过valgrind可以看到分配的内存全部被释放
 <div  align="center"><kbd>  
     <img src="./result.png" alt="result" align=center width="90%" />
 </kbd></div>  
 
-### 函数说明
+### Function Description
 ```
 Tree* BST_create();                     // 创建并初始化tree结构体
 void add_BST(Node* &root, int data);    // 插入node
