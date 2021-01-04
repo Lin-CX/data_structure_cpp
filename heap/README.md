@@ -56,5 +56,7 @@ int main(int args, char** argv) {
 
 ### 📖 Result
 
+* All allocated memory is freed. (Red line marked)
+
 ![Screenshot from 2021-01-04 21-55-18](./result.png)
 
