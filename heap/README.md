@@ -25,25 +25,25 @@ struct Heap {
 
 ```c++
 int main(int args, char** argv) {
-	Heap* heap = new Heap();					// Create Heap
+	Heap* heap = new Heap();                    // Create Heap
 	int data;
 
 	srand((unsigned)time(NULL));
-	for (int i = 0; i < MAX_ELEMENT; ++i) {		// Generate random number
+	for (int i = 0; i < MAX_ELEMENT; ++i) {     // Generate random number
 		data = random(1, MAX_ELEMENT*3);
-		cout << "Inserting " << data << ": ";	// Print random number
+		cout << "Inserting " << data << ": ";   // Print random number
 
 		// insert node
-		heapInsert(heap, data);					// Insert random number to Heap
-		heapPrint(heap);						// Print Heap every iteration
+		heapInsert(heap, data);                 // Insert random number to Heap
+		heapPrint(heap);                        // Print Heap every iteration
 	}
 
 	cout << endl;
 
 	while (heap->last >= 0) {
-		heapDelete(heap, data);					// Delete max number in Heap
-		cout << "Deleting " << data << ": ";	// Print max number
-		heapPrint(heap);						// Print Heap every iteration
+		heapDelete(heap, data);                 // Delete max number in Heap
+		cout << "Deleting " << data << ": ";    // Print max number
+		heapPrint(heap);                        // Print Heap every iteration
 	}
 
 	// memory free
@@ -56,5 +56,5 @@ int main(int args, char** argv) {
 
 ### 📖 Result
 
-![Screenshot from 2021-01-04 21-55-18](/home/lincx/mydoc/code/cpp/data-structure-cpp/heap/Screenshot from 2021-01-04 21-55-18.png)
+![Screenshot from 2021-01-04 21-55-18](./result.png)
 
